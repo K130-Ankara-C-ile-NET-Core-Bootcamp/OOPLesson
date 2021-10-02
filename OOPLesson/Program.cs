@@ -135,10 +135,6 @@ namespace OOPLesson
             {
                 SetCarProperties(car);
             }
-
-            Car carr = new BMW();
-            SetCarProperties(carr);
-            bool isBmw = carr is BMW;
         }
 
         public static void SetCarProperties(Car car)
