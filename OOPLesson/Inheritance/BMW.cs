@@ -1,4 +1,5 @@
 ﻿using System;
+using OOPLesson.Inheritance.Enums;
 
 namespace OOPLesson.Inheritance
 {
@@ -14,6 +15,8 @@ namespace OOPLesson.Inheritance
             SetY(y);
             SetWheelCount(wheelCount);
 
+            Initialise();
+
             // Bu tanım geçersizdir çünkü x ve y Car sınıfı içinde privatedır
             //_x = x;
             //_y = y;
@@ -21,7 +24,12 @@ namespace OOPLesson.Inheritance
 
         public BMW()
         {
+            Initialise();
+        }
 
+        private void Initialise()
+        {
+            FuelType = FuelType.Gas;
         }
 
         public void SetWheelCount(int wheelCount)

@@ -1,4 +1,5 @@
 ﻿using OOPLesson.AccessModifiers;
+using OOPLessonLibrary.Inheritance;
 
 namespace OOPLessonLibrary
 {
@@ -15,6 +16,10 @@ namespace OOPLessonLibrary
             // Public olduğundan erişilebilir
             internalClass.PublicProperty = 10;
 
+            var mercedes = new Mercedes(1);
+
+            // Internal olduğu için erişilemez
+            // mercedes.InternalProtectedProperty = 20;
         }
 
         public static void InternalClassDefinitions()
